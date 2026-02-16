@@ -42,8 +42,8 @@ function M.get(colors, config)
     ["@constructor"] = { link = "Special" },
 
     -- Parameters (deep orange)
-    ["@parameter"] = { fg = colors.primary_muted },
-    ["@variable.parameter"] = { fg = colors.primary_muted },
+    ["@parameter"] = { fg = colors.secondary_active },
+    ["@variable.parameter"] = { fg = colors.secondary_active },
 
     -- Keywords (red/pink)
     ["@keyword"] = { link = "Keyword" },
