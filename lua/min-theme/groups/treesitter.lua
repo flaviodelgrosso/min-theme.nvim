@@ -73,9 +73,9 @@ function M.get(colors, config)
     ["@storageclass"] = { link = "StorageClass" },
     ["@attribute"] = { link = "PreProc" },
 
-    -- Fields & properties (blue)
-    ["@field"] = { link = "ThemeSecondaryActive" },
-    ["@property"] = { link = "ThemeSecondaryActive" },
+    -- Fields & properties (neutral color)
+    ["@field"] = { link = "ThemeSecondarySoft" },
+    ["@property"] = { link = "ThemeSecondarySoft" },
 
     -- Variables (purple - Min Dark default token color)
     ["@variable"] = { fg = colors.secondary },
