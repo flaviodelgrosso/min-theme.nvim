@@ -1,0 +1,79 @@
+local M = {}
+
+---@param colors table
+---@param config ThemeConfig
+---@return table<string, HighlightDefinition>
+function M.get(colors, config)
+  -- Min Dark symbolIcon mapping:
+  -- class/enum/event → #FF9800 (orange/primary_muted)
+  -- method/constructor/function → #b392f0 (purple/secondary)
+  -- field/interface/variable/enumMember → #79b8ff (blue/secondary_active)
+  return {
+    -- Blink Cmp
+    BlinkCmpLabel = { link = "ThemeFg0" },
+    BlinkCmpLabelDeprecated = { link = "ThemeFg1" },
+    BlinkCmpLabelMatch = { link = "ThemeSecondaryActiveBold" },
+    BlinkCmpLabelDetail = { link = "ThemeGray" },
+    BlinkCmpLabelDescription = { link = "ThemeGray" },
+    BlinkCmpKindText = { link = "ThemeFg1" },
+    BlinkCmpKindVariable = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindMethod = { link = "ThemeSecondary" },
+    BlinkCmpKindFunction = { link = "ThemeSecondary" },
+    BlinkCmpKindConstructor = { link = "ThemeSecondary" },
+    BlinkCmpKindUnit = { link = "ThemeFg0" },
+    BlinkCmpKindField = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindClass = { link = "ThemePrimaryMuted" },
+    BlinkCmpKindInterface = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindModule = { link = "ThemeFg1" },
+    BlinkCmpKindProperty = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindValue = { link = "ThemeFg0" },
+    BlinkCmpKindEnum = { link = "ThemePrimaryMuted" },
+    BlinkCmpKindOperator = { link = "ThemeSecondary" },
+    BlinkCmpKindKeyword = { link = "ThemePrimary" },
+    BlinkCmpKindEvent = { link = "ThemePrimaryMuted" },
+    BlinkCmpKindReference = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindColor = { link = "ThemeFg0" },
+    BlinkCmpKindSnippet = { link = "ThemeSecondary" },
+    BlinkCmpKindFile = { link = "ThemeFg1" },
+    BlinkCmpKindFolder = { link = "ThemeFg1" },
+    BlinkCmpKindEnumMember = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindConstant = { link = "ThemeSecondaryActive" },
+    BlinkCmpKindStruct = { link = "ThemePrimaryMuted" },
+    BlinkCmpKindTypeParameter = { link = "ThemeSecondaryActive" },
+    BlinkCmpSource = { link = "ThemeGray" },
+    BlinkCmpGhostText = { link = "ThemeBg4" },
+    -- nvim-cmp
+    CmpItemAbbr = { link = "ThemeFg0" },
+    CmpItemAbbrDeprecated = { link = "ThemeFg1" },
+    CmpItemAbbrMatch = { link = "ThemeSecondaryActiveBold" },
+    CmpItemAbbrMatchFuzzy = { link = "ThemeSecondaryActiveUnderline" },
+    CmpItemMenu = { link = "ThemeGray" },
+    CmpItemKindText = { link = "ThemeFg1" },
+    CmpItemKindVariable = { link = "ThemeSecondaryActive" },
+    CmpItemKindMethod = { link = "ThemeSecondary" },
+    CmpItemKindFunction = { link = "ThemeSecondary" },
+    CmpItemKindConstructor = { link = "ThemeSecondary" },
+    CmpItemKindUnit = { link = "ThemeFg0" },
+    CmpItemKindField = { link = "ThemeSecondaryActive" },
+    CmpItemKindClass = { link = "ThemePrimaryMuted" },
+    CmpItemKindInterface = { link = "ThemeSecondaryActive" },
+    CmpItemKindModule = { link = "ThemeFg1" },
+    CmpItemKindProperty = { link = "ThemeSecondaryActive" },
+    CmpItemKindValue = { link = "ThemeFg0" },
+    CmpItemKindEnum = { link = "ThemePrimaryMuted" },
+    CmpItemKindOperator = { link = "ThemeSecondary" },
+    CmpItemKindKeyword = { link = "ThemePrimary" },
+    CmpItemKindEvent = { link = "ThemePrimaryMuted" },
+    CmpItemKindReference = { link = "ThemeSecondaryActive" },
+    CmpItemKindColor = { link = "ThemeFg0" },
+    CmpItemKindSnippet = { link = "ThemeSecondary" },
+    CmpItemKindFile = { link = "ThemeFg1" },
+    CmpItemKindFolder = { link = "ThemeFg1" },
+    CmpItemKindEnumMember = { link = "ThemeSecondaryActive" },
+    CmpItemKindConstant = { link = "ThemeSecondaryActive" },
+    CmpItemKindStruct = { link = "ThemePrimaryMuted" },
+    CmpItemKindTypeParameter = { link = "ThemeSecondaryActive" },
+  }
+end
+
+return M
