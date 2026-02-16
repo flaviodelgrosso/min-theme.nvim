@@ -25,6 +25,7 @@ function M.get(colors, config)
     ThemeSecondaryActiveBold = { fg = colors.secondary_active, bold = config.bold },
     ThemePrimaryMuted = { fg = colors.primary_muted },
     ThemeSecondarySoft = { fg = colors.secondary_soft },
+    ThemeSecondarySoftBold = { fg = colors.secondary_soft, bold = config.bold },
     ThemePrimaryActive = { fg = colors.primary_active },
     ThemePrimaryActiveBold = { fg = colors.primary_active, bold = config.bold },
     ThemePrimarySign = config.transparent_mode and { fg = colors.primary, reverse = config.invert_signs }
