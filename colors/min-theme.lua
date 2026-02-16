@@ -1,1 +1,1 @@
-require("lua.min-theme.init").load()
+require("min-theme").load()
