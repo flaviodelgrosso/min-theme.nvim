@@ -11,6 +11,7 @@ function M.get(colors, config)
     ThemeFg3 = { fg = colors.fg3 },
     ThemeFg4 = { fg = colors.fg4 },
     ThemeGray = { fg = colors.muted },
+    ThemeGrayBold = { fg = colors.muted, bold = config.bold },
     ThemeBg2 = { fg = colors.bg2 },
     ThemeBg3 = { fg = colors.bg3 },
     ThemeBg4 = { fg = colors.bg4 },

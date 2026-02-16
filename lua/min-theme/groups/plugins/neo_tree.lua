@@ -7,8 +7,8 @@ function M.get(colors, config)
   return {
     NeoTreeFloatBorder = { link = "ThemeGray" },
     NeoTreeTitleBar = { fg = colors.fg1, bg = colors.bg2 },
-    NeoTreeDirectoryIcon = { link = "ThemeSecondary" },
-    NeoTreeDirectoryName = { link = "ThemeSecondaryBold" },
+    NeoTreeDirectoryIcon = { link = "ThemeGray" },
+    NeoTreeDirectoryName = { link = "ThemeGrayBold" },
     NeoTreeWinSeparator = config.transparent_mode and { fg = colors.bg3, bg = "none" }
       or { fg = colors.bg3, bg = colors.bg0 },
   }
